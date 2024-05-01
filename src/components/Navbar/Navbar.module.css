@@ -1,0 +1,20 @@
+.menu_link_hover_effect {
+    position: relative;
+    cursor: pointer;
+}
+
+.menu_link_hover_effect::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 13%;
+    left: 0;
+    bottom: -5%;
+    background-color: #1260a0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.menu_link_hover_effect:hover::before {
+    width: 20px;
+}
